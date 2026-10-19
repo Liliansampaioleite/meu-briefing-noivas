@@ -6,14 +6,17 @@ st.set_page_config(page_title="Casamento Ideal Noivas e Festas", page_icon="💍
 st.markdown("""
 <style>
 .stApp {
-    background: white !important;
+    background: black !important;
 }
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 h1 {
     font-family: 'Great Vibes', cursive !important;
     font-size: 60px !important;
-    color: white!important;
+    color: white !important;
     text-align: center;
+}
+label {
+    color: white !important;
 }
 </style>
 """, unsafe_allow_html=True)
