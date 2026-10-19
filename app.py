@@ -2,6 +2,17 @@ import streamlit as st
 import glob
 
 st.set_page_config(page_title="Casamento Ideal Noivas e Festas", page_icon="👰")
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+h1 {
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 60px !important;
+    color: #d46a8a !important;
+    text-align: center;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # ESSE TRECHO ACHA QUALQUER IMAGEM SOZINHO, NÃO IMPORTA O NOME
 imagens = glob.glob("*.png") + glob.glob("*.jpg") + glob.glob("*.jpeg") + glob.glob("*.webp")
