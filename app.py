@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Briefing Noivas", page_icon="")
+st.set_page_config(page_title="Casamento Ideal- Noivas e Festas  page_icon="")
 
 st.image("image_20261018_223751.webp", width=200)
 
