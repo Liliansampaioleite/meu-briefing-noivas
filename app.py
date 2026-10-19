@@ -2,6 +2,12 @@ import streamlit as st
 
 st.set_page_config(page_title="Casamento Ideal Noivas e Festas", page_icon="👰")
 
+st.image("noiva.png", width=300)
+
+st.title("Casamento Ideal Noivas e Festas 👰")
+
+st.set_page_config(page_title="Casamento Ideal Noivas e Festas", page_icon="👰")
+
 st.title("Casamento Ideal Noivas e Festas 👰")
 
 with st.form("form"):
