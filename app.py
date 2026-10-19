@@ -1,10 +1,10 @@
 import streamlit as st
 
-st.set_page_config(page_title="Casamento Ideal- Noivas e Festas  page_icon="")
+st.set_page_config(page_title="Casamento Ideal -Noivas e Festas ", page_icon="👰")
 
 st.image("image_20261018_223751.webp", width=200)
 
-st.title("Casamento Ideal - Noivas e festas  👰")
+st.title("Casamento Ideal  - Noivas e Festas 👰")
 
 with st.form("form"):
     nome = st.text_input("Nome completo")
@@ -21,4 +21,3 @@ with st.form("form"):
 if botao:
     st.success(f"Obrigada {nome}! Recebi! 💖")
     st.balloons()
-
