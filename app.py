@@ -8,7 +8,7 @@ imagens = glob.glob("*.png") + glob.glob("*.jpg") + glob.glob("*.jpeg") + glob.g
 if imagens:
     st.image(imagens[0], width=300)
 
-st.title("Casamento Ideal Noivas e Festas 👰")
+st.title("Casamento Ideal Noivas e Festas ")
 
 with st.form("form"):
     nome = st.text_input("Nome completo")
