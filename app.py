@@ -3,24 +3,6 @@ import glob
 
 st.set_page_config(page_title="Casamento Ideal Noivas e Festas", page_icon="💍")
 
-st.markdown("""
-<style>
-.stApp {
-    background: black !important;
-}
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-h1 {
-    font-family: 'Great Vibes', cursive !important;
-    font-size: 60px !important;
-    color: white !important;
-    text-align: center;
-}
-label {
-    color: white !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
 imagens = glob.glob("*.png") + glob.glob("*.jpg") + glob.glob("*.jpeg") + glob.glob("*.webp")
 if imagens:
     st.image(imagens[0], width=150)
@@ -41,5 +23,5 @@ with st.form("forma"):
     botao = st.form_submit_button("Enviar 💍")
 
 if botao:
-    st.success(f"Obrigada {nome}! Recebi seu briefing! 💍")
+    st.success(f"Obrigada {nome}! Recebi! 💍")
     st.balloons()
