@@ -3,6 +3,21 @@ import glob
 
 st.set_page_config(page_title="Casamento Ideal Noivas e Festas", page_icon="💍")
 
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+h1 {
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 65px !important;
+    color: #c08a90 !important;
+    text-align: center !important;
+}
+.stApp {
+    background: white !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 imagens = glob.glob("*.png") + glob.glob("*.jpg") + glob.glob("*.jpeg") + glob.glob("*.webp")
 if imagens:
     st.image(imagens[0], width=150)
