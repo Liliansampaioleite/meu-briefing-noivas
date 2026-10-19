@@ -37,4 +37,4 @@ com rua.forma("forma"):
 
 se botao:
     rua.sucesso(f"Obrigada {nome}! Recebi! 💍")
-    rua.balões()
+    
