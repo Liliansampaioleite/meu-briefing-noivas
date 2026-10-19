@@ -6,7 +6,7 @@ st.set_page_config(page_title="Casamento Ideal Noivas e Festas", page_icon="👰
 # ESSE TRECHO ACHA QUALQUER IMAGEM SOZINHO, NÃO IMPORTA O NOME
 imagens = glob.glob("*.png") + glob.glob("*.jpg") + glob.glob("*.jpeg") + glob.glob("*.webp")
 if imagens:
-    st.image(imagens[0], width=300)
+    st.image(imagens[0], width=150)
 
 st.title("Casamento Ideal Noivas e Festas ")
 
