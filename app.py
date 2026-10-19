@@ -8,7 +8,7 @@ st.markdown("""
 h1 {
     font-family: 'Great Vibes', cursive !important;
     font-size: 60px !important;
-    color: #d46a8a !important;
+    color: white! !important;
     text-align: center;
 }
 </style>
