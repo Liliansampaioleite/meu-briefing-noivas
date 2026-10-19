@@ -1,17 +1,24 @@
 import streamlit as st
-st.title("Briefing -CASAMENTO IDEAL-NOIVAS  👰")
+
+st.set_page_config(page_title="Briefing Noivas", page_icon="")
+
+st.image("image_20261018_223751.webp", width=200)
+
+st.title("Casamento Ideal - Noivas e festas  👰")
+
 with st.form("form"):
-    nome = st.text_input("Nome completo: ")
-    data = st.date_input("Data do evento: ")
-    horario = st.time_input("Horário do evento: ")
-    voce = st.selectbox("Você é:", ["Noiva", "Festa", "Noivo"])
-    medidas = st.text_input("Número da calça / manequim : ")
+    nome = st.text_input("Nome completo")
+    data = st.date_input("Data do evento", value=None)
+    horario = st.time_input("Horário do evento", value=None)
+    medidas = st.text_input("Número da calça / manequim / altura")
     transmitir = st.text_area("O que quer transmitir nesse dia?")
     cerimonial = st.text_input("Tem cerimonial? Nome")
     orcamento = st.text_input("Seu orçamento")
     instagram = st.text_input("Seu Instagram @")
     nao_faltar = st.text_area("O que NÃO pode faltar?")
     botao = st.form_submit_button("Enviar 💌")
+
 if botao:
     st.success(f"Obrigada {nome}! Recebi! 💖")
     st.balloons()
+
