@@ -1,23 +1,20 @@
-import streamlit as st
+
+   import streamlit as st
 import glob
 
 st.set_page_config(page_title="Casamento Ideal Noivas e Festas", page_icon="💍")
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 .stApp {
-    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    background: white !important;
 }
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 h1 {
     font-family: 'Great Vibes', cursive !important;
     font-size: 65px !important;
-    color: white !important;
+    color: #c08a90 !important;
     text-align: center;
-    text-shadow: 2px 2px 4px black;
-}
-label, p {
-    color: white !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -42,5 +39,5 @@ with st.form("forma"):
     botao = st.form_submit_button("Enviar 💍")
 
 if botao:
-    st.success(f"Obrigada {nome}! Recebi seu briefing! 💍")
+    st.success(f"Obrigada {nome}! Recebi! 💍")
     st.balloons()
