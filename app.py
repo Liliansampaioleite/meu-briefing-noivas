@@ -1,30 +1,31 @@
 import streamlit as st
 import glob
 
-st.set_page_config(page_title="Casamento Ideal Noivas e Festas", page_icon="💍")
+st.set_page_config(page_title="Casamento Ideal", page_icon="💍")
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-h1 {
-    font-family: 'Great Vibes', cursive !important;
-    font-size: 65px !important;
-    color: #c08a90 !important;
-    text-align: center !important;
-}
-.stApp {
+.stApp, body, html {
     background: white !important;
+}
+p, label, span, div {
+    color: black !important;
+}
+input, textarea {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #ccc !important;
 }
 </style>
 """, unsafe_allow_html=True)
 
-imagens = glob.glob("*.png") + glob.glob("*.jpg") + glob.glob("*.jpeg") + glob.glob("*.webp")
-if imagens:
-    st.image(imagens[0], width=150)
+imgs = glob.glob("*.png") + glob.glob("*.jpg") + glob.glob("*.jpeg") + glob.glob("*.webp")
+if imgs:
+    st.image(imgs[0], width=150)
 
 st.title("Casamento Ideal Noivas e Festas")
 
-with st.form("forma"):
+with st.form("form"):
     nome = st.text_input("Nome completo")
     data = st.date_input("Data do evento", value=None)
     horario = st.time_input("Horario do evento", value=None)
@@ -35,8 +36,8 @@ with st.form("forma"):
     insta = st.text_input("Seu Instagram @")
     loja = st.text_input("Como conheceu a loja? Ja provou seu vestido? Se sim, qual loja?")
     nao_faltar = st.text_area("O que NAO pode faltar?")
-    botao = st.form_submit_button("Enviar 💍")
+    ok = st.form_submit_button("Enviar 💍")
 
-if botao:
+if ok:
     st.success(f"Obrigada {nome}! Recebi! 💍")
     st.balloons()
